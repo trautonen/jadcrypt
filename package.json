@@ -1,0 +1,25 @@
+{
+  "name": "jadcrypt",
+  "version": "0.8.0",
+  "description": "",
+  "author": "Tapio Rautonen",
+  "license": "MIT",
+  "main": "dist/jadcrypt.js",
+  "jsnext:main": "dist/jadcrypt.es6.js",
+  "scripts": {
+    "build": "npm-run-all build:cjs build:es6",
+    "build:cjs": "rollup -c rollup.config.cjs.js",
+    "build:es6": "rollup -c rollup.config.es6.js",
+    "pretest": "rollup -c rollup.config.test.js",
+    "test": "mocha target/test_bundle.js"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "eslint": "^2.11.1",
+    "mocha": "^2.5.3",
+    "npm-run-all": "^2.1.1",
+    "rollup": "^0.26.3",
+    "rollup-plugin-babel": "^2.4.0",
+    "rollup-plugin-multi-entry": "^1.2.0"
+  }
+}
