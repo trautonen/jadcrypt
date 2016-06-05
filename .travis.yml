@@ -1,6 +1,10 @@
 sudo: required
 dist: trusty
 
+before_install:
+  - nvm install 6.2.1
+  - nvm use 6.2.1
+
 install:
   - npm install
 
