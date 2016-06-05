@@ -17,19 +17,19 @@ and Node version uses callbacks in asynchronous manner.
 
 ### Java interface:
 
-_byte[] encryptRaw(byte[] plain, byte[] key, byte[] iv)_
-_String encrypt(String plain, String password, String salt, Presets presets)_
+_byte[] encryptRaw(byte[] plain, byte[] key, byte[] iv)_  
+_String encrypt(String plain, String password, String salt, Presets presets)_  
 _String encrypt(String plain, String password, String salt)_
 
-_byte[] decryptRaw(byte[] encrypted, byte[] key, byte[] iv)_
-_String decrypt(String encrypted, String password, String salt, Presets presets)_
+_byte[] decryptRaw(byte[] encrypted, byte[] key, byte[] iv)_  
+_String decrypt(String encrypted, String password, String salt, Presets presets)_  
 _String decrypt(String encrypted, String password, String salt)_
 
 
 ### Node interface:
 
-_encryptRaw(plain, key, iv, presets, callback)_
+_encryptRaw(plain, key, iv, presets, callback)_  
 _encrypt(plain, password, salt, presets, callback)_
 
-_decryptRaw(encrypted, key, iv, presets, callback)_
+_decryptRaw(encrypted, key, iv, presets, callback)_  
 _decrypt(encrypted, password, salt, presets, callback)_
