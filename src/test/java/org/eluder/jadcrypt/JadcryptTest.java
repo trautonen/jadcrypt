@@ -21,9 +21,6 @@ public class JadcryptTest {
         String encrypted = Jadcrypt.encrypt(message, password, salt);
         String decrypted = Jadcrypt.decrypt(encrypted, password, salt);
 
-        System.out.println(CryptUtils.toHex(key));
-        System.out.println(CryptUtils.toHex(iv));
-
         assertEquals(message, decrypted);
     }
 
